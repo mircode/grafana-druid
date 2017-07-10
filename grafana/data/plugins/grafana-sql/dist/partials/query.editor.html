@@ -1,0 +1,123 @@
+<query-editor-row query-ctrl="ctrl" can-collapse="true" has-text-edit-mode="true">
+	
+	<div class="gf-form-group" ng-if="ctrl.target.rawQuery">
+		<div class="gf-form">
+			<textarea sql-codemirror  date-role="editor" class="hide gf-form-input" ng-model="ctrl.sql" spellcheck="false" >{{ctrl.sql}}</textarea>
+		</div>
+		<div class="gf-form">
+			<div class="gf-form-button-row">
+				<a type="button" class="btn gf-form-button btn-success" ng-click="ctrl.format()"><i class="fa fa-wrench"></i> 格式化</a>
+				<a type="button" class="btn gf-form-button btn-success" ng-click="ctrl.save()"><i class="fa fa-save"></i> 保存</a>
+				<a type="button" class="btn gf-form-button btn-success" ng-click="ctrl.execute()"><i class="fa fa-cog"></i> 运行</a>
+			</div>
+		</div>
+	</div>
+	<div ng-if="!ctrl.target.rawQuery">
+
+		<div class="gf-form-inline">
+			<div class="gf-form">
+				<label class="gf-form-label query-keyword width-7">FROM</label>
+				<metric-segment segment="ctrl.table" get-options="ctrl.getTables()" on-change="ctrl.tableChanged()"></metric-segment>
+			</div>
+			<div class="gf-form">
+				<label class="gf-form-label query-keyword">FORMAT AS</label>
+				<div class="gf-form-select-wrapper width-8">
+					<select class="gf-form-input gf-size-auto" ng-model="ctrl.target.chartFormats" ng-options="f.value as f.text for f in ctrl.chartFormats" ng-change="ctrl.refresh()"></select>
+				</div>
+			</div>
+			<div class="gf-form gf-form--grow">
+				<div class="gf-form-label gf-form-label--grow"></div>
+			</div>
+		</div>
+
+		<div class="gf-form-inline" ng-repeat="selectParts in ctrl.select">
+			<div class="gf-form">
+				<label class="gf-form-label query-keyword width-7">
+					<span ng-show="$index === 0">SELECT</span>&nbsp;
+				</label>
+			</div>
+
+			<div class="gf-form" ng-repeat="part in selectParts">
+				<query-part-editor class="gf-form-label query-part" part="part" handle-event="ctrl.handleSelectPartEvent(selectParts, part, $event)">
+				</query-part-editor>
+			</div>
+
+			<div class="gf-form">
+				<label class="dropdown"
+								dropdown-typeahead="ctrl.selectMenu"
+								dropdown-typeahead-on-select="ctrl.addSelectPart(selectParts, $item, $subItem)">
+				</label>
+			</div>
+
+			<div class="gf-form gf-form--grow">
+				<div class="gf-form-label gf-form-label--grow"></div>
+			</div>
+		</div>
+		<div class="gf-form-inline">
+			<div class="gf-form">
+				<label class="gf-form-label query-keyword width-7">WHERE</label>
+			</div>
+
+			<div class="gf-form" ng-repeat="segment in ctrl.where">
+				<metric-segment segment="segment" get-options="ctrl.getWhereOptions(segment, $index)" on-change="ctrl.whereChanged(segment, $index)"></metric-segment>
+			</div>
+
+			<div class="gf-form gf-form--grow">
+				<div class="gf-form-label gf-form-label--grow"></div>
+			</div>
+		</div>
+		<div class="gf-form-inline">
+			<div class="gf-form">
+				<label class="gf-form-label query-keyword width-7">
+					<span>GROUP BY</span>
+				</label>
+			</div>
+			
+			<div class="gf-form" ng-repeat="segment in ctrl.groupBy">
+				<metric-segment segment="segment" get-options="ctrl.getGroupByOptions(segment,$index)" on-change="ctrl.groupByChanged(segment, $index)"></metric-segment>
+			</div>
+			
+			<div class="gf-form gf-form--grow">
+				<div class="gf-form-label gf-form-label--grow"></div>
+			</div>
+		</div>
+		
+		<div class="gf-form-inline">
+			<div class="gf-form">
+				<label class="gf-form-label query-keyword width-7">
+					<span>ORDER BY</span>
+				</label>
+
+				<query-part-editor  ng-repeat="part in ctrl.orderBy"
+                            part="part" class="gf-form-label query-part"
+                            handle-event="ctrl.handleOrderByPartEvent(part, $index, $event)">
+				</query-part-editor>
+				
+			
+			</div>
+
+			
+			<div class="gf-form">
+				<label class="dropdown"
+								dropdown-typeahead="ctrl.orderMenu"
+								dropdown-typeahead-on-select="ctrl.addOrderPart($item)">
+				</label>
+			</div>
+				
+			<div class="gf-form gf-form--grow">
+				<div class="gf-form-label gf-form-label--grow"></div>
+			</div>
+		</div>
+		<div class="gf-form-inline">
+			<div class="gf-form max-width-15">
+				<label class="gf-form-label query-keyword width-7">LIMIT</label>
+				<input type="text" class="gf-form-input" ng-model="ctrl.target.limit" spellcheck='false' placeholder="no limit" ng-blur="ctrl.refresh()">
+			</div>
+			<div class="gf-form gf-form--grow">
+				<div class="gf-form-label gf-form-label--grow"></div>
+			</div>
+		</div>
+	</div>
+</query-editor-row>
+
+

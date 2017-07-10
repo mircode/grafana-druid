@@ -1,0 +1,35 @@
+{
+  "name": "SQL",
+  "id": "grafana-sql",
+  "type": "datasource",
+
+  "partials": {
+    "config": "public/app/plugins/datasource/sql/partials/config.html"
+  },
+
+  "metrics": true,
+  "annotations": true,
+
+  "info": {
+    "description": "grafana plugin for sql datasource",
+    "author": {
+      "name": "mircode",
+      "url": "http://mircode.io"
+    },
+    "logos": {
+      "small": "src/img/sql_logo.png",
+      "large": "src/img/sql_logo.png"
+    },
+    "links": [
+      {"name": "GitHub", "url": "https://github.com/mircode/grafana-sql"},
+      {"name": "MIT License", "url": "https://github.com/mircode/grafana-sql/LICENSE"}
+    ],
+    "version": "1.0.0",
+    "updated": "2016-12-14"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "4.x.x",
+    "plugins": [ ]
+  }
+}

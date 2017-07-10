@@ -1,0 +1,446 @@
+t=2016-12-17T15:53:07+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=4ns size=29
+t=2016-12-17T15:53:07+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=8ns size=24
+t=2016-12-17T21:36:02+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8528
+t=2016-12-17T21:36:02+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8528
+t=2016-12-18T11:43:18+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-18T11:43:18+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-18T11:43:18+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-18T11:43:18+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-18T11:43:18+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-18T11:43:18+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-18T11:43:18+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-18T11:43:18+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-18T11:43:18+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-18T11:43:18+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-18T11:43:18+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-18T11:43:18+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-18T11:43:18+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-18T11:43:20+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-18T11:43:20+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-18T11:43:20+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-18T11:43:20+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-18T12:07:29+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=6ns size=29
+t=2016-12-18T12:07:29+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=5ns size=24
+t=2016-12-18T14:47:49+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=9ns size=8528
+t=2016-12-18T14:47:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=7ns size=8528
+t=2016-12-18T14:48:06+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=17ns size=8528
+t=2016-12-18T16:28:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=9ns size=8528
+t=2016-12-19T09:16:32+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-19T09:16:32+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-19T09:16:32+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-19T09:16:32+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-19T09:16:32+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-19T09:16:32+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-19T09:16:32+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-19T09:16:32+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-19T09:16:32+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-19T09:16:32+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-19T09:16:32+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-19T09:16:32+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-19T09:16:32+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-19T09:16:32+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-19T09:16:32+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-19T09:16:32+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-19T09:16:32+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-19T09:40:23+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=12ns size=29
+t=2016-12-19T09:40:23+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=11ns size=24
+t=2016-12-19T17:05:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-19T17:05:53+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-19T17:05:53+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-19T17:17:27+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=57ns size=8523
+t=2016-12-19T18:00:48+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-19T18:01:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-19T18:04:29+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-19T18:04:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-19T19:47:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=28ns size=8523
+t=2016-12-19T19:47:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=37ns size=8523
+t=2016-12-19T19:52:06+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-20T09:15:53+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-20T09:15:53+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-20T09:15:53+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-20T09:15:53+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-20T09:15:53+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-20T09:15:53+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-20T09:15:53+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-20T09:15:53+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-20T09:15:53+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-20T09:15:53+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-20T09:15:53+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-20T09:15:53+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-20T09:15:53+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-20T09:15:54+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-20T09:15:54+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-20T09:15:54+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-20T09:15:54+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-20T09:18:22+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=9ns size=29
+t=2016-12-20T09:18:22+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=6ns size=24
+t=2016-12-20T10:10:02+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=31ns size=8523
+t=2016-12-20T10:10:02+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=34ns size=8523
+t=2016-12-20T10:11:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=26ns size=8523
+t=2016-12-20T10:11:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=16ns size=8523
+t=2016-12-20T10:11:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=16ns size=8523
+t=2016-12-20T10:11:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=18ns size=8523
+t=2016-12-20T10:12:08+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-20T10:12:08+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-20T13:55:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-20T14:34:09+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-20T15:11:59+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-20T16:30:13+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-21T08:45:50+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-21T08:45:50+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-21T08:45:50+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-21T08:45:50+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-21T08:45:50+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-21T08:45:50+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-21T08:45:50+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-21T08:45:50+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-21T08:45:50+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-21T08:45:50+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-21T08:45:50+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-21T08:45:50+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-21T08:45:50+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-21T08:45:50+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-21T08:45:50+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-21T08:45:50+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-21T08:45:50+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-21T09:34:54+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=6ns size=29
+t=2016-12-21T09:34:54+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=5ns size=24
+t=2016-12-21T09:38:16+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-21T09:53:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=4ns size=8523
+t=2016-12-21T09:53:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=19ns size=8523
+t=2016-12-21T09:53:48+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=13ns size=8523
+t=2016-12-21T15:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-21T15:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-21T15:23:01+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-21T15:23:01+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-21T15:49:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-21T15:52:04+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-22T09:18:28+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-22T09:18:28+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-22T09:18:28+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-22T09:18:28+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-22T09:18:28+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-22T09:18:28+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-22T09:18:28+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-22T09:18:28+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-22T09:18:29+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-22T09:18:29+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-22T09:18:29+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-22T09:18:29+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-22T09:18:29+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-22T09:18:30+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-22T09:18:30+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-22T09:18:30+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-22T09:18:31+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-22T09:21:09+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=9ns size=29
+t=2016-12-22T09:21:09+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=7ns size=24
+t=2016-12-22T15:52:08+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-22T16:23:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=25ns size=8523
+t=2016-12-22T16:23:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=16ns size=8523
+t=2016-12-22T16:27:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=24ns size=8523
+t=2016-12-22T17:22:08+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-22T17:22:08+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-22T17:22:08+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-22T17:22:08+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-22T17:22:08+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-22T17:22:08+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-22T17:22:08+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-22T17:22:08+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-22T17:22:08+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-22T17:22:08+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-22T17:22:08+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-22T17:22:08+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-22T17:22:08+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-22T17:22:08+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-22T17:22:08+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-22T17:22:08+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-22T17:22:08+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-22T17:23:17+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=12ns size=29
+t=2016-12-22T17:23:17+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=8ns size=24
+t=2016-12-22T17:24:35+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=5ns size=8523
+t=2016-12-22T17:24:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-22T19:13:48+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/editor/css/codemirror.css status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-22T19:13:48+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/editor/js/codemirror.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-22T19:13:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/editor/css/codemirror.css status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-22T19:14:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-22T19:14:42+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T19:14:52+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-22T19:15:23+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/editor/css/codemirror.css status=404 remote_addr=[::1] time_ms=13ns size=8523
+t=2016-12-22T19:15:23+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/editor/js/codemirror.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T19:21:26+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T19:22:55+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T19:23:05+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T19:23:17+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-22T19:23:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-22T19:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-22T19:24:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/js status=404 remote_addr=[::1] time_ms=27ns size=8523
+t=2016-12-22T19:48:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js/codemirror.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-22T19:54:10+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js/codemirror.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T19:54:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js/codemirror.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-22T19:54:59+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js/codemirror.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-22T19:55:10+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js/codemirror.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T20:01:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/stringstream.js status=404 remote_addr=[::1] time_ms=13ns size=3959
+t=2016-12-22T20:01:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/util.js status=404 remote_addr=[::1] time_ms=15ns size=3959
+t=2016-12-22T20:01:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/select.js status=404 remote_addr=[::1] time_ms=14ns size=3959
+t=2016-12-22T20:01:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/undo.js status=404 remote_addr=[::1] time_ms=12ns size=3959
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/select.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/contrib/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/tokenize.js status=404 remote_addr=[::1] time_ms=19ns size=8523
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/undo.js status=404 remote_addr=[::1] time_ms=23ns size=8523
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/stringstream.js status=404 remote_addr=[::1] time_ms=31ns size=8523
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/editor.js status=404 remote_addr=[::1] time_ms=27ns size=8523
+t=2016-12-22T20:17:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/js/util.js status=404 remote_addr=[::1] time_ms=40ns size=8523
+t=2016-12-22T20:19:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-22T20:21:14+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/partials/ status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-22T20:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/editor.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T20:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/undo.js status=404 remote_addr=[::1] time_ms=41ns size=8523
+t=2016-12-22T20:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/stringstream.js status=404 remote_addr=[::1] time_ms=45ns size=8523
+t=2016-12-22T20:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/select.js status=404 remote_addr=[::1] time_ms=53ns size=8523
+t=2016-12-22T20:22:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/tokenize.js status=404 remote_addr=[::1] time_ms=55ns size=8523
+t=2016-12-22T20:22:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/util.js status=404 remote_addr=[::1] time_ms=69ns size=8523
+t=2016-12-22T20:22:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=71ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/editor.js status=404 remote_addr=[::1] time_ms=39ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/stringstream.js status=404 remote_addr=[::1] time_ms=68ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/undo.js status=404 remote_addr=[::1] time_ms=51ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/select.js status=404 remote_addr=[::1] time_ms=45ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/tokenize.js status=404 remote_addr=[::1] time_ms=47ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/util.js status=404 remote_addr=[::1] time_ms=98ns size=8523
+t=2016-12-22T20:23:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=77ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/stringstream.js status=404 remote_addr=[::1] time_ms=46ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/undo.js status=404 remote_addr=[::1] time_ms=61ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/js//public/plugins/js/util.js status=404 remote_addr=[::1] time_ms=65ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/select.js status=404 remote_addr=[::1] time_ms=76ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/editor.js status=404 remote_addr=[::1] time_ms=71ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/tokenize.js status=404 remote_addr=[::1] time_ms=79ns size=8523
+t=2016-12-22T20:30:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=23ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/stringstream.js status=404 remote_addr=[::1] time_ms=13ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/undo.js status=404 remote_addr=[::1] time_ms=18ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/util.js status=404 remote_addr=[::1] time_ms=57ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=38ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/tokenize.js status=404 remote_addr=[::1] time_ms=62ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/select.js status=404 remote_addr=[::1] time_ms=63ns size=8523
+t=2016-12-22T20:31:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/editor.js status=404 remote_addr=[::1] time_ms=74ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/util.js status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/select.js status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/undo.js status=404 remote_addr=[::1] time_ms=26ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/tokenize.js status=404 remote_addr=[::1] time_ms=20ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/stringstream.js status=404 remote_addr=[::1] time_ms=35ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=24ns size=8523
+t=2016-12-22T20:32:47+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/editor.js status=404 remote_addr=[::1] time_ms=44ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/stringstream.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/util.js status=404 remote_addr=[::1] time_ms=16ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=23ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/select.js status=404 remote_addr=[::1] time_ms=27ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/undo.js status=404 remote_addr=[::1] time_ms=29ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/tokenize.js status=404 remote_addr=[::1] time_ms=32ns size=8523
+t=2016-12-22T20:34:25+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/js/editor.js status=404 remote_addr=[::1] time_ms=38ns size=8523
+t=2016-12-22T20:35:00+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-22T20:35:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T20:36:35+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/js//public/plugins/grafana-sql/sql/js/parsesql.js status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-22T20:41:16+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql/codemirror.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T20:41:16+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_model.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-22T20:41:16+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/util.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/css/sqlcolors.css status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/tokenize.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js//public/plugins/grafana-sql/lib/js/parsesql.js status=404 remote_addr=[::1] time_ms=36ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/editor.js status=404 remote_addr=[::1] time_ms=58ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/undo.js status=404 remote_addr=[::1] time_ms=59ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/stringstream.js status=404 remote_addr=[::1] time_ms=60ns size=8523
+t=2016-12-22T20:41:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/select.js status=404 remote_addr=[::1] time_ms=63ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/undo.js status=404 remote_addr=[::1] time_ms=16ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/css/sqlcolors.css status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/stringstream.js status=404 remote_addr=[::1] time_ms=29ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/util.js status=404 remote_addr=[::1] time_ms=55ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/select.js status=404 remote_addr=[::1] time_ms=66ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/editor.js status=404 remote_addr=[::1] time_ms=63ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js//public/plugins/grafana-sql/lib/js/parsesql.js status=404 remote_addr=[::1] time_ms=51ns size=8523
+t=2016-12-22T20:42:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/tokenize.js status=404 remote_addr=[::1] time_ms=56ns size=8523
+t=2016-12-22T20:43:23+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js//public/plugins/grafana-sql/lib/js/parsesql.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-22T20:44:04+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js//public/plugins/grafana-sql/lib/js/parsesql.js status=404 remote_addr=[::1] time_ms=15ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/stringstream.js status=404 remote_addr=[::1] time_ms=17ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/undo.js status=404 remote_addr=[::1] time_ms=44ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/css/sqlcolors.css status=404 remote_addr=[::1] time_ms=51ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/editor.js status=404 remote_addr=[::1] time_ms=58ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/util.js status=404 remote_addr=[::1] time_ms=66ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/tokenize.js status=404 remote_addr=[::1] time_ms=63ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js/select.js status=404 remote_addr=[::1] time_ms=78ns size=8523
+t=2016-12-22T20:44:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/js//public/plugins/grafana-sql/lib/js/parsesql.js status=404 remote_addr=[::1] time_ms=27ns size=8523
+t=2016-12-23T09:15:31+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-23T09:15:31+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-23T09:15:31+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-23T09:15:31+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-23T09:15:31+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-23T09:15:31+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-23T09:15:31+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-23T09:15:31+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-23T09:15:31+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-23T09:15:31+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-23T09:15:31+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-23T09:15:31+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-23T09:15:31+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-23T09:15:31+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-23T09:15:31+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-23T09:15:31+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-23T09:15:31+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-26T15:46:59+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-26T15:46:59+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-26T15:46:59+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-26T15:46:59+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-26T15:46:59+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-26T15:46:59+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-26T15:46:59+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-26T15:46:59+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-26T15:46:59+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-26T15:46:59+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-26T15:46:59+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-26T15:46:59+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-26T15:46:59+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-26T15:46:59+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-26T15:46:59+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-26T15:46:59+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-26T15:46:59+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-26T15:47:51+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=9ns size=29
+t=2016-12-26T15:47:51+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=7ns size=24
+t=2016-12-26T15:51:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T15:53:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T15:53:36+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=13ns size=8523
+t=2016-12-26T15:54:00+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=25ns size=8523
+t=2016-12-26T15:54:32+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T15:56:30+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T16:10:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T16:13:39+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-26T16:13:55+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T16:16:31+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T16:30:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T16:30:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_part.js status=404 remote_addr=[::1] time_ms=23ns size=8523
+t=2016-12-26T16:31:36+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/favicon.ico status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T16:48:36+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T16:53:55+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T16:56:41+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T16:57:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T18:32:33+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/sql_editor.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T18:34:40+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T18:42:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T18:44:36+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/sql_editor.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T18:44:46+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/lib/sql_editor.js status=404 remote_addr=[::1] time_ms=13ns size=8523
+t=2016-12-26T18:59:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T19:01:27+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T19:01:38+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T19:01:52+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T19:15:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T19:20:49+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T19:27:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T19:27:55+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T19:28:02+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T19:29:26+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T19:35:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T19:36:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T19:40:05+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T19:43:42+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-26T19:43:48+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T19:43:54+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T19:44:05+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T19:51:57+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T19:52:06+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T19:59:46+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T20:00:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=17ns size=8523
+t=2016-12-26T20:07:01+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:10:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T20:12:51+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T20:13:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:14:15+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T20:15:38+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T20:19:22+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=17ns size=8523
+t=2016-12-26T20:19:28+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-26T20:19:39+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T20:19:46+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:19:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=13ns size=8523
+t=2016-12-26T20:23:49+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=5ns size=8523
+t=2016-12-26T20:23:53+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:24:03+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:24:08+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T20:24:14+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:24:18+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-26T20:24:21+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/sql_editor.js status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-26T20:25:58+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-26T20:26:07+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-26T20:26:19+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=12ns size=8523
+t=2016-12-26T20:31:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T20:31:49+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-26T20:31:59+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=14ns size=8523
+t=2016-12-26T20:33:45+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T20:34:04+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/query_ctrl.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2016-12-26T20:43:24+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-26T20:43:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=10ns size=8523
+t=2016-12-26T20:48:12+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8523
+t=2016-12-26T20:48:26+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-27T09:12:53+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2016-12-27T09:12:54+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2016-12-27T09:12:54+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2016-12-27T09:12:54+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2016-12-27T09:12:54+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2016-12-27T09:12:54+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2016-12-27T09:12:54+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2016-12-27T09:12:54+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2016-12-27T09:12:54+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2016-12-27T09:12:54+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2016-12-27T09:12:54+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2016-12-27T09:12:54+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2016-12-27T09:12:54+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2016-12-27T09:12:54+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2016-12-27T09:12:54+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2016-12-27T09:12:54+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2016-12-27T09:12:55+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2016-12-27T09:27:51+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=6ns size=29
+t=2016-12-27T09:27:51+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=7ns size=24
+t=2016-12-27T09:28:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-27T09:55:44+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-27T10:06:08+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-27T11:28:34+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-27T12:48:29+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8523
+t=2016-12-27T12:48:37+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=6ns size=8523
+t=2016-12-27T12:48:45+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-27T12:48:54+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=5ns size=8523
+t=2016-12-27T12:49:13+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=7ns size=8523
+t=2016-12-27T12:49:55+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=11ns size=8523
+t=2017-01-01T03:39:16+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2017-01-01T03:39:16+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2017-01-01T03:39:16+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2017-01-01T03:39:16+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2017-01-01T03:39:16+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2017-01-01T03:39:16+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2017-01-01T03:39:16+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-01-01T03:39:16+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-01-01T03:39:16+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-01-01T03:39:16+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-01-01T03:39:16+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-01-01T03:39:16+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-01-01T03:39:16+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-01-01T03:39:16+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2017-01-01T03:39:16+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-01-01T03:39:16+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-01-01T03:39:16+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2017-01-01T03:40:08+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=8ns size=29
+t=2017-01-01T03:40:09+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=5ns size=24
+t=2017-01-01T11:11:35+0800 lvl=info msg="Starting Grafana" logger=main version=4.0.2 commit=v4.0.2+1-g8feaef2 compiled=2016-12-12T21:37:40+0800
+t=2017-01-01T11:11:35+0800 lvl=info msg="Config loaded from" logger=settings file=E:\\grafana/conf/defaults.ini
+t=2017-01-01T11:11:35+0800 lvl=info msg="Path Home" logger=settings path=E:\\grafana
+t=2017-01-01T11:11:35+0800 lvl=info msg="Path Data" logger=settings path=E:\\grafana\\data
+t=2017-01-01T11:11:35+0800 lvl=info msg="Path Logs" logger=settings path=E:\\grafana\\data\\log
+t=2017-01-01T11:11:35+0800 lvl=info msg="Path Plugins" logger=settings path=E:\\grafana\\data\\plugins
+t=2017-01-01T11:11:35+0800 lvl=info msg="Initializing DB" logger=sqlstore dbtype=sqlite3
+t=2017-01-01T11:11:35+0800 lvl=info msg="Starting DB migration" logger=migrator
+t=2017-01-01T11:11:35+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account to org"
+t=2017-01-01T11:11:35+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account to org"
+t=2017-01-01T11:11:35+0800 lvl=info msg="Executing migration" logger=migrator id="copy data account_user to org_user"
+t=2017-01-01T11:11:35+0800 lvl=info msg="Skipping migration condition not fulfilled" logger=migrator id="copy data account_user to org_user"
+t=2017-01-01T11:11:35+0800 lvl=info msg="Starting plugin search" logger=plugins
+t=2017-01-01T11:11:35+0800 lvl=info msg="Registering plugin" logger=plugins name=SQL
+t=2017-01-01T11:11:35+0800 lvl=info msg="Initializing Alerting" logger=alerting.engine
+t=2017-01-01T11:11:35+0800 lvl=info msg="Initializing CleanUpService" logger=cleanup
+t=2017-01-01T11:11:35+0800 lvl=info msg="Initializing HTTP Server" logger=server address=0.0.0.0:3000 protocol=http subUrl=
+t=2017-01-01T11:14:20+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=5ns size=29
+t=2017-01-01T11:14:20+0800 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=6ns size=24
+t=2017-01-01T17:33:32+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=9ns size=8528
+t=2017-01-01T17:41:24+0800 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-sql/module.js status=404 remote_addr=[::1] time_ms=8ns size=8529

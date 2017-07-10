@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SQL格式化</title>
+	</head>
+	<body>
+		<pre id="result"></pre>
+		<script src="./sql/app/lib/jquery/js/jquery.js"></script>
+		<script>
+	
+			var console={
+				info:function(str){
+					var result=document.getElementById('result');
+					result.innerHTML=result.innerHTML+'<br>'+str;
+					
+				}
+			};
+			var sqls=[
+				'select f1,f2,f3,(select * from t where t=1 and t=2) from t left join t on t1=t2 where f=1 and f=2 and f=3 group by f having order by f desc  limit 0,10',
+				'delete from table where t1=1 and t2=3',
+				'insert into table values (1,2,3,3)',
+				'update table set t=1,t=2 where t1=1 and t=2 and t=4',
+				'create table tt (name varchar,name varchar,name varchar,name varchar,name varchar)',
+				'alert table table_name add column_name datatype,c n,c n,c n',
+				'drop table'
+			];
+			
+			
+			var SqlFormat={
+				defualt:{
+					keywords:'select|from|where|join|on|group by|having|order by|limit|left join|right join|inner join|outer join|'+
+					      	 'delete from|insert into|values|update|set|'+
+					      	 'create table|drop table|alert table|add',
+					hock:{
+						// 默认格式化,逗号分隔
+						'default_format':function(str,offset){
+							var pre=new Array(offset).join(' ');
+							return str.replace(/,/ig,',\n'+pre);
+						},
+						'select':function(str,offset){
+							return this.default_format(str,offset);
+						},
+						'set':function(str,offset){
+							return this.default_format(str,offset);
+						},
+						'add':function(str,offset){
+							return this.default_format(str,offset);
+						},
+						'create table':function(str,offset){
+							var pre=new Array(offset+str.indexOf('(')).join(' ');
+							return str.replace(/,/ig,',\n'+pre);
+						},
+						'where':function(str,offset){
+							var keywords='and|or';
+							var off_info=SqlFormat.maxoffset(str,keywords);
+							var maxoffset=off_info.offset;
+							var num=off_info.num;
+							
+							// 如果关键子出现的次数小于2直接返回字符串,不格式化
+							if(num<2) return str;
+							
+							var subs=SqlFormat.child(str,'(');
+							str=subs.target;
+							
+							// format 							
+							str=str.replace(new RegExp(keywords,'ig'),function(match){
+								var z=0;
+								if(match.length){
+									z=maxoffset-match.length;
+								}
+								var pre=new Array(offset+z).join(' ');
+								return '\n'+pre+match;
+							})
+							
+							// format child
+							maxoffset=maxoffset+offset;
+							for(var key in subs.sub){
+								var sub=this.where(subs.sub[key].replace(/\((.*)\)/ig,'$1'),maxoffset+2);
+								var pre=new Array(maxoffset+2).join(' ');
+								str=str.replace(key,'(\n'+pre+sub+'\n'+pre+')');
+							}
+							
+							return str;
+							
+						}
+					}
+				},
+				getOptions:function(options){
+					options=options||{};
+					if(options.keywords){
+						this.defualt.keywords+='|'+options.keywords;	
+					}
+					for(var key in options.hock){
+						this.defualt.hock[key]=options.hock[key];
+					}
+					return this.defualt;
+				},
+				format:function(sql,options,offset){
+					
+					var options=this.getOptions(options);
+					
+					var keywords=options.keywords;
+					var hock=options.hock;
+					
+					// format inline
+					var sql=sql.replace(/^\s+|\s+$|;/ig,'')
+								.replace(/\n/ig,'')
+								.replace(/\s+/ig,' ')
+								.replace(/\(\s*(select)/ig,'($1');
+					
+					var subsql=this.child(sql,'(select');
+					sql=subsql.target;
+					
+					// max offset
+					var max_offset=this.maxoffset(sql,keywords).offset;
+					max_offset+=(offset||0);
+					
+					// format
+					var i=0;
+					sql=sql.replace(new RegExp(keywords,'ig'),'}$&{').substring(1).concat('}')
+					   .replace(new RegExp('('+keywords+'){(.*?)}','ig'),function(match,func,args){
+					   		var pre=new Array(max_offset-func.length+1).join(' ');
+							return (++i>1?'\n':'')+pre+func+(hock[func]?hock[func](args,max_offset+2):args);
+						});
+					
+					// child replace
+					if(subsql.child){
+						for(var key in subsql.sub){
+							// format child
+							var sub=this.format(subsql.sub[key].replace(/\((.*)\)/ig,'$1'),options,max_offset+2);
+							// replace child
+							sql=sql.replace(key,'('+sub.replace(/\s+select/ig,'select')+')');
+						}
+					}
+					return sql;
+				},
+				maxoffset:function(str,keywords){
+					var max_offset=0;
+					var i=0;
+					str.replace(new RegExp(keywords,'ig'),function(match){
+						i++;
+						if(max_offset<match.length){
+							max_offset=match.length;
+						}
+					});
+					return {offset:max_offset,num:i};
+				},
+				// 获取嵌套子串,嵌套select和where条件 
+				child:function(str,search){ 
+					var res=[];
+			     	var start=str.indexOf(search);
+					var end=start;
+					while(start>-1 && start<str.length){
+						var deep=0;
+						var sub='';
+						for(var i=start;i<str.length;i++){
+							var c=str[i];
+							sub+=c;
+							if(c==='('){
+								deep++;
+							}else if(c===')'){
+								deep--;
+							}
+							if(deep==0){
+								end=i;
+								break;
+							}
+						}
+						if(deep!==0){
+							throw new error("str format error brackets not match");
+							break;
+						}
+						res.push(sub);
+						start=str.indexOf(search,end);
+						end=start;
+					}
+					
+					// 替换子串并返回映射关系
+					var mapsub={target:str,child:false,sub:{}};
+					for(var i in res){
+						var j=i;
+						mapsub.target=mapsub.target.replace(res[i],function(match){
+							j++;
+							mapsub.sub['__sub'+j]=match;
+							mapsub.child=true;
+							return '__sub'+j;
+						});
+					}
+					
+					return mapsub;
+					
+				}
+			}
+			
+			for(var i in sqls){
+				console.info('---------------------------------');
+				console.info(SqlFormat.format(sqls[i]));
+			}
+			
+			/**
+			 * 用于打印日志
+			 */
+			function log(lg){
+				console.info(lg);
+				//print(lg);
+			}
+			// 配置字段最大的长度
+			var config={
+				MAX_FIELD_WIDTH:1,
+			}
+			/**
+			 * 
+			 * 用于格式化JSON格式,获取到JSON串,所有叶子节点
+			 **/
+			function format(doc,header,path){
+				for(var key in doc){
+					var val=doc[key];
+					if(isObject(val)){
+						format(val,header,path==undefined?key:path+'.'+key);
+					}else {
+						var width=0;
+						if(isArray(val)){
+			    			 val.forEach(function(e) {
+			                    var length=JSON.stringify(e);;
+			                    width=Math.max(child,length);
+			                 });
+			    		}else{
+			    			width=getFieldsMaxWidth(val);
+			    		}
+			    		var max1=config.MAX_FIELD_WIDTH;
+			    		var max2=(path==undefined?key:path+'.'+key).length;
+			    		var max3=width;
+			    		
+			    		var k=path==undefined?key:path+'.'+key;
+			    		var v=Math.max(max1,max2,max3);
+			    		
+			    		var flag=false;
+			    		for(var i in header){
+			    			if(header[i].name==k){
+			    				header[i].width=Math.max(header[i].width,v);
+			    				flag=true;
+			    			}
+			    		}
+			    		if(!flag){
+			    			header.push({name:k,width:v});
+			    		}
+					}
+				}
+			}
+			/**
+			 * 获取到表格头
+			 */
+			function getTableHeader(header){
+				
+				var dept=0;
+				for(var i=0;i<header.length;i++){
+					dept=Math.max(dept,header[i].name.split('.').length);
+				}
+				
+				var table_header=[];
+				// 保存表格头的最后一列
+				table_header[dept]=header;
+				
+				while(dept>1){
+					
+					table_header[dept-1]=[];
+					for(var i=0;i<table_header[dept].length;i++){
+						
+						var nd=table_header[dept][i];
+						
+						
+						var val=nd.width;
+						var level=nd.name.split('.').length;
+						
+						if(level==dept){
+							
+							var sumKey=nd.name.substring(0,nd.name.lastIndexOf('.'));
+							
+							var flag=false;
+							for(var z in table_header[dept-1]){
+								var item=table_header[dept-1][z];
+								if(item.name==sumKey){
+									item.width=item.width+(val+1);
+									flag=true;
+								}
+							}
+							if(!flag){
+								table_header[dept-1].push({name:sumKey,width:val});
+							}
+						}else{
+							table_header[dept-1].push({name:nd.name,width:val});
+						}
+						
+					}
+					dept--;
+				}
+				return table_header;
+			}
+			// 用于打印表格
+			function printTable(table_header,docs){
+				
+				
+				var bottom_row='+';
+				
+				// 打印表格头
+				for(var i=1;i<table_header.length;i++){
+					var split_row='+';
+					var row='|';
+					for(var j=0;j<table_header[i].length;j++){
+						
+						var name=table_header[i][j].name;
+						var width=table_header[i][j].width;
+						
+						
+						var level=name.split('.').length;
+						if(level!=i){
+							split_row+=new Array(width+1).join(' ')+'|';
+							row+=new Array(width+1).join(' ')+'|';
+						}else{
+							split_row+=new Array(width+1).join('-')+'+';
+							row+=name+new Array(width-name.length+1).join(' ')+'|';
+						}
+						
+						
+						if(i==table_header.length-1){
+							bottom_row+=new Array(width+1).join('-')+'+';
+						}
+					}
+					log(split_row);
+					log(row);
+				}
+				log(bottom_row);
+			
+				//打印表格内容
+				for(var i=0;i<docs.length;i++){
+					var last_header=table_header[table_header.length-1];
+					
+					var row='|';
+					for(var z=0;z<last_header.length;z++){
+						var name=last_header[z].name;
+						var width=last_header[z].width;
+						var field=getValue(docs[i],name)
+						
+						row+=field+new Array(width-lenField(field)+1).join(' ')+'|';
+						
+					}
+					log(row);
+				}
+				log(bottom_row);
+			}
+			/**
+			 * 返回最大的列宽
+			 * @param {Object} txt
+			 */
+			function getFieldsMaxWidth(txt){
+				txt+='';
+				var max=0;
+				var lines=txt.split('\n');
+				for(var i in lines){
+					var len=lenField(lines[i]);
+					max=Math.max(len,max);
+				}
+				return max;
+			}
+			/**
+			 * 替换双字节的元素,替换为2个单字节的字符,然后计算长度
+			 * @param {Object} str
+			 */
+			function lenField(str){
+		  		if (str==null) return 0;str+='';
+				return str.replace(/[^\x00-\xff]/g,'01').length;
+			}
+			
+			/**
+			 * 更具path返回对应的值
+			 * 
+			 * input  a.c.d
+			 * output a->c->d
+			 * 
+			 * @param {Object} obj
+			 * @param {Object} path
+			 */
+			function getValue(obj,path){
+				var names=path.split('.');
+			    for(var i=0;i<names.length;i++) {
+			        var name=names[i];
+			        if (obj[name]===undefined) {
+			            return undefined;
+			        }
+			        obj=obj[name];
+			    }
+			    if(isObject(obj)){
+			        obj = undefined;
+			    }
+			    return obj;
+			}
+			/**
+			 * 判断一个obj是否是一个对象
+			 * @param {Object} obj
+			 */
+			function isObject(obj){
+				var type=typeof obj; 
+				return type==='function'||type==='object'&&!!obj;
+			}
+			/**
+			 * 判断obj是否是一个数组
+			 * @param {Object} obj
+			 */
+			function isArray(obj){
+				if(Array.isArray){
+					return 	Array.isArray(obj);
+				}else{
+					return toString.call(obj) === '[object Array]';
+				}
+			}
+			
+			/**
+			   一、
+			   
+			 JSON数据: {a:{b:1,c:{d:1}},e:{f:1,g:1}}
+			   
+			   递归遍历JSON对象,获取到JSON中所有对象的根节点
+			 
+			 header:[{name:'a.b',width:3},{name:'a.c.d',width:5},{name:'e.f',width:3},{name:'e.g',width:3}]
+			   
+			   
+			   二、通过 header[3]自低向上推算出其父节点
+			   
+			  header[3]=[{name:'a.b',width:3},{name:'a.c.d',width:5},{name:'e.f',width:3},{name:'e.g',width:3}]
+			  header[2]=[{name:'a.b',width:3},{name:'a.c',width:5},{name:'e.f',width:3},{name:'e.g',width:3}]
+			  header[1]=[{name:'a',width:8},{name:'e',width:6}]
+			  
+			    
+			    
+			  +-------------+-----------+
+			  | a           | e         |  header[1]={a:1,e:1};
+			  +-----+-------+-----+-----+
+			  | a.b | a.c   | e.f | e.g |  header[2]={a.b:1,a.c:1,e.f:1,e.g:1}
+			  |-----+-------+-----|-----|
+			  | a.b | a.c.d | e.f | e.g |  header[3]={a.b:1,a.c.d:1,e.f:1,e.g:1}
+			  +-----+-------+-----+-----+
+			
+			     三、打印表格
+			  
+			  +-------------+-----------+
+			  | a           | e         |
+			  +-----+-------+-----+-----+
+			  | a.b | a.c   | e.f | e.g |
+			  |     +-------+     |     |
+			  |     | a.c.d |     |     |
+			  +-----+-------+-----+-----+
+			* */
+		
+			// 解析JSON数据格式
+			function table(docs){
+				
+				if(!docs){
+					docs=this.toArray();
+				}
+				var header=[];
+				
+				// 计算出所有docs的叶子节点,和对应的数据宽度
+				for(var i=0;i<docs.length;i++){
+					format(docs[i],header)
+				}
+				// log(header);
+				
+				// 计算到需要打印的table的表头
+				var table_header=getTableHeader(header);
+				// log(table_header);
+			
+				// 打印表格
+				printTable(table_header,docs);
+				
+			}
+	
+			$(function(){
+				var url='http://192.168.0.150:8088/plyql';
+				
+				var query=function(sql){
+					return execute(url,sql);
+				};
+				
+				
+				function execute(url,sql,method){
+					return $.ajax({
+						url: url,
+				        type: method||'POST',
+				        data:JSON.stringify({sql:sql}),
+				        contentType: 'application/json',
+				        dataType: 'json'
+				   });
+				}
+				
+				var sql='select * from analysis_day limit 5';
+				query(sql).done(function(data){
+					console.info(sql);
+					table(data.result);
+				});
+			});
+		</script>
+	</body>
+</html>
